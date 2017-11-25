@@ -1,0 +1,12 @@
+On taking a closer look at the problem we find that it reduces to a fibonacci series. We can observe that the count is actually (n+2)’th Fibonacci number for n >= 1.
+
+n = 1, count = 2  = fib(3)
+n = 2, count = 3  = fib(4)
+n = 3, count = 5  = fib(5)
+n = 4, count = 8  = fib(6)
+n = 5, count = 13 = fib(7)
+as so on...
+
+My approach relies on the fact that if we n times multiply the matrix M = {{1,1},{1,0}} to itself (in other words calculate power(M, n )), then we get the (n+1)th Fibonacci number as the element at row and column (0, 0) in the resultant matrix. 
+
+
